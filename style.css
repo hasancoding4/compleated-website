@@ -1,0 +1,306 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.row{
+    background-color: rgb(34, 60, 85);
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+/* common code ended */
+
+
+.container{
+    background-color: chartreuse;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(30, 71, 71);
+    padding: 0% 1%;
+    text-align: center;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 6px;
+    text-align: center;
+    
+}
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 0 20px;
+    font-size: 0.9rem;
+    transition: .4s;
+}
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: rgb(41, 38, 38);
+}
+
+
+
+/* main started here */
+/* banner secton started here */
+#banner-section{
+    background-image: url(img/white-tailed-eagle-2015098_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+}
+.banner-contents h3{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    padding: 10px;
+}
+.banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background: rgb(64, 80, 49);
+    text-transform: uppercase;
+    transition: .4s;
+    color: white;
+}
+.btn:hover{
+   transform: scale(1.2);
+}
+/* banner section ended */
+
+
+/* about us section started */
+#about-us{
+    padding:1%;
+}
+.about-us-contents{
+    text-align: center;
+}
+.about-us-contents h3{
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.about-us-contents p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+/* about us section ended */
+
+
+/* food menu section started */
+#menu-section{
+    padding: 1%;
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.item-desc{
+    background-color: cadetblue;
+    text-align: center;
+}
+.item-name{
+    background-color: darkolivegreen;
+    color: white;
+    padding: 10px;
+}
+.item-desc > p{
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 2px red;
+    transition: 0.4s;
+}
+.card:hover{
+    transform:scale(1.2) ;
+}
+/* food menu section ended */
+
+
+/* contact section started */
+#contact{
+    padding: 1%;
+    background-color: rgb(83, 77, 77);
+}
+.map{
+    height: 250px;
+    width: 100%;
+}
+.content-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.content-details p{
+    font-size: 0.8rem;
+}
+/* contact section ended */
+/* main ended here */
+
+
+/* footer started here */
+footer{
+    padding: 1%;
+    color: white;
+    background-color: rgb(41, 38, 38);
+}
+footer p{
+    line-height: 32px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.social-menus{
+    text-align: center;
+}
+.social-icon{
+    width: 42px;
+    height: auto;
+    line-height: 42px;
+    border-radius: 25%;
+    border: 1px solid black;
+    margin: 0 10px;
+    transition: .4s;
+}
+/* footer ended here */
+
+
+
+@media (min-width: 576px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+@media (min-width: 778px) {
+    #banner-section{
+        height: 70vh;
+        position: relative;
+    }
+    .banner-contents{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .col-1-mid {width: 8.33%;}
+.col-2-mid {width: 16.66%;}
+.col-3-mid {width: 25%;}
+.col-4-mid {width: 33.33%;}
+.col-5-mid {width: 41.66%;}
+.col-6-mid {width: 50%;}
+.col-7-mid {width: 58.33%;}
+.col-8-mid {width: 66.66%;}
+.col-9-mid {width: 75%;}
+.col-10-mid {width: 83.33%;}
+.col-11-mid {width: 91.66%;}
+.col-12-mid {width: 100%;}
+}
+
+
+@media (min-width: 972px) {
+    .logo-div{
+       text-align: left;
+    }
+    nav ul{
+        text-align: right;
+    }
+    nav ul li{
+        display: inline-block;
+        
+    }
+    nav ul li a{
+        display: inline-block;
+    }
+    nav ul li a:hover{
+        background: transparent;
+        transform: scale(1.4);
+        text-decoration: underline;
+        border-radius: 0;
+    }
+    #banner-section{
+        height: 100vh;
+        position: relative;
+    }
+    .banner-contents{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .col-1-lrg {width: 8.33%;}
+.col-2-lrg {width: 16.66%;}
+.col-3-lrg {width: 25%;}
+.col-4-lrg {width: 33.33%;}
+.col-5-lrg {width: 41.66%;}
+.col-6-lrg {width: 50%;}
+.col-7-lrg {width: 58.33%;}
+.col-8-lrg {width: 66.66%;}
+.col-9-lrg {width: 75%;}
+.col-10-lrg {width: 83.33%;}
+.col-11-lrg {width: 91.66%;}
+.col-12-lrg{width: 100%;}
+}
